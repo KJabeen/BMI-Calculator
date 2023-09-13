@@ -83,7 +83,7 @@ function status (bmi) {
         back.style.backgroundColor = "   hsl(0, 100%, 34%, 0.3)";
         
     }else {
-        health.innerHTML= "Worsen Obesity";
+       alert();
     }
 }
 
