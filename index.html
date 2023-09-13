@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header></header>
+    <main class="wrapper">
+        <div class="container1">
+            <form action="">
+            <div class="text">
+                <h1 class="title">Calculate Your BMI</h1>
+            </div>
+            <div class="height">
+                <label for="height">Height(cm):</label>
+                <input class="h" type="number" id="height" size="10" />
+            </div>
+            <div class="weight">
+                <label for="weight">Weight(kg):</label>
+
+                <input class="w" type="number" id="weight" size="10" />
+            </div>
+            <div class="button">
+                <!-- to calculate bmi -->
+                <input class="calculate" type="button" value="C A L C U L A T E" onclick="validate();">
+                        
+                <!-- to reset input field -->
+                <input class="reset" type="reset" value="R E S E T">
+               
+            </div>
+            
+           
+        </div>
+
+        <!-- =================after submission===================== -->
+        <div class="container2 hidden">
+           
+                    <div class="resulted">
+                        <h2 >Your BMI is:&nbsp;<br>
+                            <span class="resultbmi"></span>&nbsp;
+                        </h2>
+                    </div>
+                    <div class="healthstatus">
+                        <h2 >Your health Status is:&nbsp;<br>
+                            <span class="status"></span>&nbsp;
+                        </h2>
+                    </div>
+                    
+           
+      
+        </div>
+
+    </form>
+
+        <script src="index.js"></script>
+
+    </main>
+ 
+    <script src="index.js"></script>
+    <footer>
+        <div class="attribution ">          
+            Coded By
+            <a href="https://github.com/KJabeen">KJabeen</a>
+        </div>
+    </footer>
+</body>
+
+</html>

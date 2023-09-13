@@ -1,0 +1,235 @@
+
+:root{
+    
+    /* Colors */
+
+    /* Primary */
+
+    --Orange: hsl(25, 100%, 67%);
+    --pink: hsl(345, 100%, 78%);
+    --leavegreen: hsl(125, 100%, 51%);
+    --red1: hsl(0, 100%, 50%);
+    --red2: hsl(0, 100%, 34%);
+    
+    
+    
+    /* Neutral */
+    
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 22%, 32%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --blue: hsl(217, 89%, 42%);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    font-family: 'Overpass', sans-serif;
+    background-image: url(bg-bmi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wrapper{
+    width: 25%;
+    
+    background-color: hsl(213, 22%, 32%,0.5);
+    border-radius: 25px;
+    margin: 2rem;
+    padding: 0 0.7rem;
+    /* opacity: 0.3; */
+    
+}
+.container1{
+    width: 100%;
+    padding: 1.3rem;  
+    
+    
+}
+.hide{
+    display: none;
+}
+
+.text{
+    margin: 1.5rem 0rem;
+    color: black;
+    opacity: 1;
+    line-height: 1.2rem;
+    
+}
+.title{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: black;
+    text-align: center;
+}
+.weight{
+    /* border: 2px solid red; */
+    margin: 0.5rem;
+    padding: 0rem;
+    font-weight:bolder;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.height{
+    /* border: 2px solid red; */
+    margin: 0.5rem;
+    padding: 0rem;
+    font-weight:bolder;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+}
+#weight{
+    border: 2px solid green;
+    padding: 0.3rem;
+    width: 50%;
+    border-radius: 5px;
+}
+#height{
+    border: 2px solid green;
+    padding: 0.3rem;
+    width: 50%;
+    border-radius: 5px;
+}
+label{
+
+    /* border: 5px solid red; */
+    /* padding: 0.3rem; */
+
+
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.calculate{
+    border: 2px solid hsl(25, 100%, 67%);
+    margin: 1.5rem 0rem 0.5rem 0;
+    height: 100%;
+    width: 60%;
+    padding: 0.55rem;
+    border-radius: 25px;
+    background-color: hsl(25, 100%, 67%);
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.calculate:hover{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    color: hsl(25, 100%, 67%);
+}
+.reset{
+    border: 2px solid hsl(25, 100%, 67%);
+    margin: 1.5rem 0rem 0.5rem 0;
+    height: 100%;
+    width: 40%;
+    padding: 0.55rem;
+    border-radius: 25px;
+    background-color: hsl(25, 100%, 67%);
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.reset:hover{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    color: hsl(25, 100%, 67%);
+}
+.container2{
+    width: 100%;
+    padding: 1.3rem;
+    
+}
+.hidden{
+    display: none;
+}
+
+.resulted{
+    text-align: center;
+    /* background-color:  hsl(212, 14%, 21%) ; */
+    color: black;
+    margin: 1.3rem 1rem;
+    border-radius: 20px;
+    
+}
+.resultbmi{
+    text-decoration: underline;
+}
+
+.healthstatus{
+    text-align: center;
+    /* background-color:  hsl(212, 14%, 21%) ; */
+    color: black;
+    margin: 1.3rem 1rem;
+    border-radius: 20px;
+}
+.status{
+   
+        text-decoration: underline;
+        font-size: 1.8rem;
+    }
+
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+    margin: auto;
+    position: relative;
+    bottom: -80px;
+    color: black;
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 425px) {
+    body{
+        height: 100vh;
+        
+        background-color: var(--VeryDarkBlue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        font-family: 'Overpass', sans-serif;
+        background-image: url(bg-mobile-bmi.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wrapper{
+        width: 85%;
+        background-color: hsl(213, 22%, 32%,0.5);
+        border-radius: 25px;
+        margin: 2rem;
+        padding: 0 0.7rem;
+        
+    }
+    .resulted{
+        margin: 1.5rem 2rem;
+    }
+}
